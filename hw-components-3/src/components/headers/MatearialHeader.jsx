@@ -1,27 +1,27 @@
 import React from 'react'
 import { PropTypes } from 'prop-types'
 
-export const MatearialHeader = ({ now }) => {
+export const MatearialHeader = ({ date }) => {
     return (
         <div className="ui-datepicker-material-header">
             <div className="ui-datepicker-material-day">
-                {now.toLocaleString('ru', {
+                {date.toLocaleString('ru', {
                     weekday: 'long'
                 })}
             </div>
             <div className="ui-datepicker-material-date">
                 <div className="ui-datepicker-material-day-num">
-                    {now.toLocaleString('ru', {
+                    {date.toLocaleString('ru', {
                         day: 'numeric'
                     })}
                 </div>
                 <div className="ui-datepicker-material-month">
-                    {now.toLocaleString('ru', {
+                    {date.toLocaleString('ru', {
                         month: 'long'
                     })}
                 </div>
                 <div className="ui-datepicker-material-year">
-                    {now.toLocaleString('ru', {
+                    {date.toLocaleString('ru', {
                         year: 'numeric'
                     })}
                 </div>
@@ -31,5 +31,5 @@ export const MatearialHeader = ({ now }) => {
 }
 
 MatearialHeader.propTypes = {
-    now: PropTypes.instanceOf(Date)
+    date: PropTypes.instanceOf(Date)
 }

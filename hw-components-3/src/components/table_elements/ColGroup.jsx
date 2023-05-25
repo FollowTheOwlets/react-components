@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-const ColGroup = ({ now }) => {
+export const ColGroup = () => {
     return (
         <colgroup>
             <col />
@@ -15,8 +14,3 @@ const ColGroup = ({ now }) => {
     )
 }
 
-ColGroup.propTypes = {
-    now: PropTypes.instanceOf(Date)
-}
-
-export default ColGroup

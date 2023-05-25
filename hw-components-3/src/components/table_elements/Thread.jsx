@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-const Thread = ({ now }) => {
+export const Thread = () => {
     return (
         <thead>
             <tr>
@@ -17,8 +16,3 @@ const Thread = ({ now }) => {
     )
 }
 
-Thread.propTypes = {
-    now: PropTypes.instanceOf(Date)
-}
-
-export default Thread
